@@ -63,7 +63,7 @@ import { FaInstagram } from 'react-icons/fa';
           justify={{ base: 'center', md: 'space-between' }}
           align={{ base: 'center', md: 'center' }}>
           <Logo />
-          <Text>© 2023 Sergio Velazquez Groomer. All rights reserved</Text>
+          <Text textAlign={'center'}>© 2023 Sergio Velazquez Groomer. All rights reserved</Text>
           <Stack direction={'row'} spacing={6}>
             <SocialButton label={'Instagram'} href={'https://www.instagram.com/pelucan.sergio/'}>
               <FaInstagram />
