@@ -72,7 +72,7 @@ import { Blob } from '../hero/hero';
               />
           </Flex>
           <Box mt={2}>
-            <Heading color={'gray.700'} size="md">{heading}</Heading>
+            <Heading color={'gray.700'} size="lg">{heading}</Heading>
             <Text color={'gray.600'} mt={1} fontSize="lg">
               {description}
             </Text>
