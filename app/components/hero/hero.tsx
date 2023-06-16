@@ -10,7 +10,7 @@ import {
   Stack,
   Text
 } from '@chakra-ui/react';
-import { FaInstagram } from 'react-icons/fa';
+import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
   
   export default function Hero() {
     return (
@@ -50,17 +50,19 @@ import { FaInstagram } from 'react-icons/fa';
             </Text>
             <Stack
               spacing={{ base: 4, sm: 6 }}
-              direction='row'>
+              direction='row'
+              >
               <a href={'https://cutt.ly/PELUCAN'} target="_blank" rel="noopener noreferrer">
                 <Button
                   rounded={'full'}
                   size={'lg'}
                   fontWeight={'normal'}
                   px={6}
-                  colorScheme={'red'}
+                  w={'100%'}
+                  colorScheme={'orange'}
                   bg={'var(--primary-color)'}
-                  _hover={{ bg: 'orange.600' }}>
-                  Sacá turno!
+                  _hover={{ bg: 'orange.500' }}>
+                  Sacá turno!&nbsp;<FaWhatsapp />
                 </Button>
               </a>
               <a href={'https://www.instagram.com/pelucan.sergio/'} target="_blank" rel="noopener noreferrer">
@@ -69,10 +71,11 @@ import { FaInstagram } from 'react-icons/fa';
                   size={'lg'}
                   fontWeight={'normal'}
                   px={6}
-                  colorScheme={'red'}
+                  w={'100%'}
+                  colorScheme={'orange'}
                   bg={'var(--primary-color)'}
                   _hover={{ bg: 'orange.600' }}>
-                  <FaInstagram />
+                  Visitanos&nbsp;<FaInstagram />
                 </Button>
               </a>
             </Stack>
