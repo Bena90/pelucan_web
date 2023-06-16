@@ -18,6 +18,10 @@
     #0071ff33 160deg,
     transparent 360deg
   );
+
+  --primary-color-opacity: #f38f0080;
+  --primary-color: #f38f00;
+  --primary-dark: #a15e00;
   --secondary-glow: radial-gradient(
     rgba(255, 255, 255, 1),
     rgba(255, 255, 255, 0)
@@ -90,17 +94,8 @@ body {
   overflow-x: hidden;
 }
 
-body {
-
-}
-
 a {
   color: inherit;
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
