@@ -6,10 +6,10 @@ import { HomeLayout } from './layout/home_layout'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata = {
-  title: 'Pelucan - Sergio Velazquez Groomer',
-  description: 'Pelucan - Sergio Velazquez Groomer',
-}
+// export const metadata = {
+//   title: 'Pelucan - Sergio Velazquez Groomer',
+//   description: 'Pelucan - Sergio Velazquez Groomer',
+// }
 
 export default function RootLayout({
   children,
