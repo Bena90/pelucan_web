@@ -46,7 +46,9 @@ import {
           <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
             <Text
               textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
+              lineHeight='20px'
               fontFamily={'heading'}
+              fontSize={{base: 'xl'}}
               color={useColorModeValue('gray.800', 'white')}>
               Sergio Velazquez
             </Text>
