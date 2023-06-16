@@ -73,7 +73,7 @@ import { Blob } from '../hero/hero';
           </Flex>
           <Box mt={2}>
             <Heading color={'gray.700'} size="md">{heading}</Heading>
-            <Text color={'gray.600'} mt={1} fontSize={'sm'}>
+            <Text color={'gray.600'} mt={1} fontSize="lg">
               {description}
             </Text>
           </Box>
@@ -97,10 +97,10 @@ import { Blob } from '../hero/hero';
               color='var(--primary-color)'
             />
           <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
-            <Heading color={'gray.700'} fontSize={{ base: '2xl', sm: '5xl' }} fontWeight={700}>
+            <Heading color={'gray.700'} fontSize={{ base: '3xl', sm: '5xl' }} fontWeight={700}>
               Conocé nuestros servicios
             </Heading>
-            <Text color={'gray.600'} fontSize={{ base: 'sm', sm: 'lg' }}>
+            <Text color={'gray.600'} fontSize='lg'>
               Descubre nuestra gama de servicios especializados para el cuidado y embellecimiento de tu mascota
             </Text>
           </Stack>
