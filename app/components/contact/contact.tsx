@@ -3,18 +3,12 @@ import {
   Button,
   Container,
   Flex,
-  HStack,
   Heading,
-  IconButton,
   Text,
   VStack
 } from '@chakra-ui/react';
-import { BsDiscord, BsGithub } from 'react-icons/bs';
-import {
-  MdFacebook,
-  MdLocationOn,
-  MdPhone
-} from 'react-icons/md';
+import { BsInstagram } from 'react-icons/bs';
+import { FaLocationArrow, FaPhone } from 'react-icons/fa';
 import { Blob } from '../hero/hero';
   
   export default function Contact() {
@@ -61,7 +55,8 @@ import { Blob } from '../hero/hero';
                           width="200px"
                           variant="ghost"
                           color="gray.800"
-                          leftIcon={<MdPhone color="#505050" size="20px" />}>
+                          _hover={{ bg: 'none', cursor: 'auto' }}
+                          leftIcon={<FaPhone color="#505050" size="20px" />}>
                           +11549547470888
                         </Button>
                         <Button
@@ -70,41 +65,24 @@ import { Blob } from '../hero/hero';
                           width="200px"
                           variant="ghost"
                           color="gray.800"
-                          leftIcon={<MdLocationOn color="#505050" size="20px" />}>
-                          Martinez, San Isidro
+                          _hover={{ bg: 'none', cursor: 'auto' }}
+                          leftIcon={<FaLocationArrow color="#505050" size="20px" />}>
+                          Italia 1624, Martinez.
                         </Button>
+                        <a href="https://www.instagram.com/pelucan.sergio/">
+                          <Button
+                            size="md"
+                            height="48px"
+                            width="200px"
+                            variant="ghost"
+                            color="gray.800"
+                            _hover={{ bg: 'orange.200'}}
+                            leftIcon={<BsInstagram color="#505050" size="20px" />}>
+                            ./pelucan.sergio
+                          </Button>
+                        </a>
                       </VStack>
                     </Box>
-                    <HStack
-                      mt={{ lg: 10, md: 10 }}
-                      spacing={5}
-                      px={5}
-                      alignItems="flex-start">
-                      <IconButton
-                        aria-label="facebook"
-                        variant="ghost"
-                        size="lg"
-                        isRound={true}
-                        _hover={{ bg: '#0D74FF' }}
-                        icon={<MdFacebook size="28px" />}
-                      />
-                      <IconButton
-                        aria-label="github"
-                        variant="ghost"
-                        size="lg"
-                        isRound={true}
-                        _hover={{ bg: '#0D74FF' }}
-                        icon={<BsGithub size="28px" />}
-                      />
-                      <IconButton
-                        aria-label="discord"
-                        variant="ghost"
-                        size="lg"
-                        isRound={true}
-                        _hover={{ bg: '#0D74FF' }}
-                        icon={<BsDiscord size="28px" />}
-                      />
-                    </HStack>
                 </Box>
                 <Box  w={'100%'}>
                   <Box bg="white" borderRadius="lg" overflow={'hidden'}>

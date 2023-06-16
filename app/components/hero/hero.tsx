@@ -50,7 +50,7 @@ import { FaInstagram } from 'react-icons/fa';
             </Text>
             <Stack
               spacing={{ base: 4, sm: 6 }}
-              direction={{ base: 'column', sm: 'row' }}>
+              direction='row'>
               <a href={'https://cutt.ly/PELUCAN'} target="_blank" rel="noopener noreferrer">
                 <Button
                   rounded={'full'}
