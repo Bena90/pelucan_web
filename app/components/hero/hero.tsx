@@ -63,7 +63,7 @@ import { FaInstagram } from 'react-icons/fa';
                   Sacá turno!
                 </Button>
               </a>
-              <a href={'https://cutt.ly/PELUCAN'} target="_blank" rel="noopener noreferrer">
+              <a href={'https://www.instagram.com/pelucan.sergio/'} target="_blank" rel="noopener noreferrer">
                 <Button
                   rounded={'full'}
                   size={'lg'}

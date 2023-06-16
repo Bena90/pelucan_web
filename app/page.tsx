@@ -12,7 +12,6 @@ export default function Home() {
         <Feature/>
         <Divider />
         <ArticleList />
-        <Divider />
         <Contact/>
     </main>
   )

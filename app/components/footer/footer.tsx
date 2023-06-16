@@ -8,7 +8,7 @@ import {
   VisuallyHidden,
 } from '@chakra-ui/react';
 import { ReactNode } from 'react';
-import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa';
   
   const Logo = (props: any) => {
     return (
@@ -65,13 +65,7 @@ import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
           <Logo />
           <Text>© 2023 Sergio Velazquez Groomer. All rights reserved</Text>
           <Stack direction={'row'} spacing={6}>
-            <SocialButton label={'Twitter'} href={'#'}>
-              <FaTwitter />
-            </SocialButton>
-            <SocialButton label={'YouTube'} href={'#'}>
-              <FaYoutube />
-            </SocialButton>
-            <SocialButton label={'Instagram'} href={'#'}>
+            <SocialButton label={'Instagram'} href={'https://www.instagram.com/pelucan.sergio/'}>
               <FaInstagram />
             </SocialButton>
           </Stack>
