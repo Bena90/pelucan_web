@@ -9,7 +9,7 @@ import {
 
 const ArticleList = () => {
   return (
-    <Container maxW={'7xl'} p="12">
+    <Container maxW={'7xl'} p="12" id='about'>
       <Box
         marginTop={{ base: '1', sm: '5' }}
         display="flex"

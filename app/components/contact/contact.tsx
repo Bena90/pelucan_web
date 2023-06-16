@@ -19,7 +19,7 @@ import { Blob } from '../hero/hero';
   
   export default function Contact() {
     return (
-      <Container  maxW="full" mt={0} centerContent>
+      <Container  maxW="full" mt={0} centerContent id='contact'>
         <Flex w={'100%'} position={'relative'}>
           <Blob
             w={'120%'}

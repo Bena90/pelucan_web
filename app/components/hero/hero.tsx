@@ -13,7 +13,7 @@ import {
   
   export default function Hero() {
     return (
-      <Container maxW={'7xl'}>
+      <Container maxW={'7xl'} id='hero'>
         <Stack
           align={'center'}
           spacing={{ base: 8, md: 10 }}
@@ -50,16 +50,18 @@ import {
             <Stack
               spacing={{ base: 4, sm: 6 }}
               direction={{ base: 'column', sm: 'row' }}>
-              <Button
-                rounded={'full'}
-                size={'lg'}
-                fontWeight={'normal'}
-                px={6}
-                colorScheme={'red'}
-                bg={'var(--primary-color)'}
-                _hover={{ bg: 'orange.600' }}>
-                Sacá turno!
-              </Button>
+              <a href={'https://cutt.ly/PELUCAN'} target="_blank" rel="noopener noreferrer">
+                <Button
+                  rounded={'full'}
+                  size={'lg'}
+                  fontWeight={'normal'}
+                  px={6}
+                  colorScheme={'red'}
+                  bg={'var(--primary-color)'}
+                  _hover={{ bg: 'orange.600' }}>
+                  Sacá turno!
+                </Button>
+              </a>
             </Stack>
           </Stack>
           <Flex

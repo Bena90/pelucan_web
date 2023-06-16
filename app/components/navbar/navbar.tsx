@@ -138,17 +138,19 @@ import {
   const NAV_ITEMS: Array<NavItem> = [
     {
       label: 'Home',
+      href: '#hero'
     },
     {
       label: 'Servicios',
+      href:  '#feature'
     },
     {
       label: 'Nosotros',
-      href: '#',
+      href: '#about',
     },
     {
       label: 'Contacto',
-      href: '#',
+      href: '#contact',
     },
   ];
   
