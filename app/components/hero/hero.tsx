@@ -10,6 +10,7 @@ import {
   Stack,
   Text
 } from '@chakra-ui/react';
+import { FaInstagram } from 'react-icons/fa';
   
   export default function Hero() {
     return (
@@ -60,6 +61,18 @@ import {
                   bg={'var(--primary-color)'}
                   _hover={{ bg: 'orange.600' }}>
                   Sacá turno!
+                </Button>
+              </a>
+              <a href={'https://cutt.ly/PELUCAN'} target="_blank" rel="noopener noreferrer">
+                <Button
+                  rounded={'full'}
+                  size={'lg'}
+                  fontWeight={'normal'}
+                  px={6}
+                  colorScheme={'red'}
+                  bg={'var(--primary-color)'}
+                  _hover={{ bg: 'orange.600' }}>
+                  <FaInstagram />
                 </Button>
               </a>
             </Stack>

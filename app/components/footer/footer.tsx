@@ -18,7 +18,7 @@ import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
     );
   };
   
-  const SocialButton = ({
+  export const SocialButton = ({
     children,
     label,
     href,
