@@ -13,6 +13,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>Pelucan - Sergio Velazquez Groomer</title>
+        <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16"/>
       </head>
       <body className={inter.className}>
 
