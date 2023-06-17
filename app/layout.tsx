@@ -1,14 +1,8 @@
-import { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { HomeLayout } from './layout/home_layout'
 
 const inter = Inter({ subsets: ['latin'] })
-
-export const metadata: Metadata = {
-  title: 'Pelucan - Sergio Velazquez Groomer',
-  description: 'Pelucan - Sergio Velazquez Groomer',
-}
 
 export default function RootLayout({
   children,
@@ -17,6 +11,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <title>Pelucan - Sergio Velazquez Groomer</title>
+      </head>
       <body className={inter.className}>
 
           <HomeLayout>
