@@ -110,6 +110,7 @@ import { Blob } from '../hero/hero';
               {features.map((feature)=> {
                 return(
                   <Card
+                    key={feature.name}
                     heading={feature.name}
                     icon={feature.icon}
                     description={feature.description}
