@@ -1,18 +1,23 @@
 "use client"
-import { Box, ChakraProvider } from "@chakra-ui/react"
+
+import { Box } from "@chakra-ui/react"
 import { ReactNode } from "react"
 import Footer from "../components/footer/footer"
 import Navbar from "../components/navbar/navbar"
+import { ChakraProvider } from "../providers/chakra-provider"
 
-export const HomeLayout = ({children}: {children: ReactNode}): JSX.Element => {
+interface HomeLayoutProps {
+  children: ReactNode
+}
 
-    return(
-        <ChakraProvider>
-            <Box>
-                <Navbar />
-                {children}
-                <Footer />
-            </Box>
-        </ChakraProvider>
-    )
+export const HomeLayout = ({ children }: HomeLayoutProps) => {
+  return (
+    <ChakraProvider>
+      <Box>
+        <Navbar />
+        {children}
+        <Footer />
+      </Box>
+    </ChakraProvider>
+  )
 }

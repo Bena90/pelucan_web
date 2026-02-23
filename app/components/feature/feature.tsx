@@ -14,12 +14,11 @@ import { Blob } from '../hero/hero';
     heading: string;
     description: string;
     icon: string;
-    href: string;
   }
 
   const features = [
     {
-      name: "Cortes de raza ",
+      name: "Cortes de raza",
       description: "Cortes de raza precisos y adaptados a las necesidades de tu amigo canino. Nos aseguramos de resaltar la belleza natural de tu mascota, realzando sus características y asegurando un acabado impecable.",
       icon: "/assets/barbero.png",
     },
@@ -43,7 +42,6 @@ import { Blob } from '../hero/hero';
   const Card = ({ heading, description, icon }: CardProps) => {
     return (
       <Box
-        id='feature'
         maxW={{ base: 'full', md: '275px' }}
         w={'full'}
         borderWidth="1px"
@@ -84,7 +82,7 @@ import { Blob } from '../hero/hero';
   
   export default function Feature() {
     return (
-      <Box p="12" w={'100%'} position={'relative'}>
+      <Box p="12" w={'100%'} position={'relative'} id="feature">
 
             <Blob
               w={'75%'}
@@ -107,18 +105,14 @@ import { Blob } from '../hero/hero';
     
           <Container maxW={'5xl'} mt={12}>
             <Flex flexWrap="wrap" gridGap={6} justify="center">
-              {features.map((feature)=> {
-                return(
-                  <Card
-                    key={feature.name}
-                    heading={feature.name}
-                    icon={feature.icon}
-                    description={feature.description}
-                    href={'#'}
-                  />
-                )
-              })
-              }
+              {features.map((feature) => (
+                <Card
+                  key={feature.name}
+                  heading={feature.name}
+                  icon={feature.icon}
+                  description={feature.description}
+                />
+              ))}
             </Flex>
           </Container>
       </Box>

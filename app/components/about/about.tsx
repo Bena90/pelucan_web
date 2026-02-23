@@ -30,7 +30,7 @@ const ArticleList = () => {
               <Image
                 borderRadius="lg"
                 src='/assets/about.png'
-                alt="some good alt text"
+                alt="Sergio Velazquez, peluquero canino profesional en Martinez"
                 objectFit="contain"
               />
           </Box>

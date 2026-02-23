@@ -10,7 +10,7 @@ import {
 import { ReactNode } from 'react';
 import { FaInstagram } from 'react-icons/fa';
   
-  const Logo = (props: any) => {
+  const Logo = () => {
     return (
       <Text fontSize='2xl'>
         Pelucan
@@ -63,7 +63,7 @@ import { FaInstagram } from 'react-icons/fa';
           justify={{ base: 'center', md: 'space-between' }}
           align={{ base: 'center', md: 'center' }}>
           <Logo />
-          <Text textAlign={'center'}>© 2023 Sergio Velazquez Groomer. All rights reserved</Text>
+          <Text textAlign={'center'}>© {new Date().getFullYear()} Sergio Velazquez Groomer. All rights reserved</Text>
           <Stack direction={'row'} spacing={6}>
             <SocialButton label={'Instagram'} href={'https://www.instagram.com/pelucan.sergio/'}>
               <FaInstagram />

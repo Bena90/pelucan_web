@@ -57,7 +57,7 @@ import { Blob } from '../hero/hero';
                           color="gray.800"
                           _hover={{ bg: 'none', cursor: 'auto' }}
                           leftIcon={<FaPhone color="#505050" size="20px" />}>
-                          +11549547470888
+                          +54 9 11 5495-4747
                         </Button>
                         <Button
                           size="md"
@@ -89,6 +89,7 @@ import { Blob } from '../hero/hero';
 
                       <VStack>
                         <iframe
+                          title="Ubicación de Pelucan en Google Maps - Italia 1624, Martinez"
                           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3288.574194112528!2d-58.50468649999999!3d-34.4883247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb1ab8bccaac7%3A0x652472dd5456a196!2sItalia%201624%2C%20B1640BMH%20Mart%C3%ADnez%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1686714756359!5m2!1ses-419!2sar"
                           width="100%"
                           height="350"

@@ -103,7 +103,7 @@ import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
               width={'full'}
               overflow={'hidden'}>
               <Image
-                alt={'Hero Image'}
+                alt={'Perro feliz después del grooming profesional en Pelucan'}
                 fit={'cover'}
                 align={'center'}
                 w={'400px'}

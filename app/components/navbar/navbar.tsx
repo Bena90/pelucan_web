@@ -105,11 +105,9 @@ import {
     );
   };
   
-  const MobileNavItem = ({ label, children, href }: NavItem) => {
-    const { isOpen, onToggle } = useDisclosure();
-  
+  const MobileNavItem = ({ label, href }: NavItem) => {
     return (
-      <Stack spacing={4} onClick={children && onToggle}>
+      <Stack spacing={4}>
         <Flex
           py={2}
           as={Link}
@@ -125,7 +123,6 @@ import {
             {label}
           </Text>
         </Flex>
-
       </Stack>
     );
   };
