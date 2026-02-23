@@ -1,12 +1,9 @@
-import { Roboto } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import './globals.css'
 import { HomeLayout } from './layout/home_layout'
 import { Metadata } from 'next'
 
-const roboto = Roboto({ 
-  subsets: ['latin'],
-  weight: ['100', '300', '400', '500', '700', '900']
-})
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Pelucan - Sergio Velazquez Groomer | Peluquería Canina en Martinez',
@@ -95,7 +92,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={roboto.className}>
+      <body className={inter.className}>
         <HomeLayout>
           {children}
         </HomeLayout>

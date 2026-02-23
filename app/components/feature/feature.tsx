@@ -42,7 +42,7 @@ import { Blob } from '../hero/hero';
   const Card = ({ heading, description, icon }: CardProps) => {
     return (
       <Box
-        maxW={{ base: 'full', md: '275px' }}
+        maxW={{ base: 'full', md: '45%' }}
         w={'full'}
         borderWidth="1px"
         borderRadius="lg"
