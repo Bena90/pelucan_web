@@ -80,7 +80,7 @@ const PillarCard = ({ title, description, icon }: PillarCardProps) => {
           />
         </Flex>
         <Box>
-          <Heading color="var(--primary-color)" size="md">
+          <Heading as="h3" color="var(--primary-color)" size="md">
             {title}
           </Heading>
           <Text color="gray.600" mt={2} fontSize="md" lineHeight="tall">
@@ -123,6 +123,7 @@ export default function Philosophy() {
             Nuestra forma de cuidar
           </Text>
           <Heading
+            as="h2"
             color="gray.700"
             fontSize={{ base: "2xl", sm: "4xl" }}
             fontWeight={700}

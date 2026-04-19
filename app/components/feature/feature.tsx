@@ -70,7 +70,7 @@ import { Blob } from '../hero/hero';
               />
           </Flex>
           <Box mt={2}>
-            <Heading color={'gray.700'} size="lg">{heading}</Heading>
+            <Heading as="h3" color={'gray.700'} size="lg">{heading}</Heading>
             <Text color={'gray.600'} mt={1} fontSize="lg">
               {description}
             </Text>
@@ -95,7 +95,7 @@ import { Blob } from '../hero/hero';
               color='var(--primary-color)'
             />
           <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
-            <Heading color={'gray.700'} fontSize={{ base: '3xl', sm: '5xl' }} fontWeight={700}>
+            <Heading as="h2" color={'gray.700'} fontSize={{ base: '3xl', sm: '5xl' }} fontWeight={700}>
               Conocé nuestros servicios
             </Heading>
             <Text color={'gray.600'} fontSize='lg'>

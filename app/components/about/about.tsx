@@ -30,7 +30,7 @@ const ArticleList = () => {
               <Image
                 borderRadius="lg"
                 src='/assets/about.png'
-                alt="Sergio Velazquez, peluquero canino profesional en Martinez"
+                alt="Sergio Velazquez, peluquero canino profesional en Martínez"
                 objectFit="contain"
               />
           </Box>
@@ -49,7 +49,7 @@ const ArticleList = () => {
           flexDirection="column"
           justifyContent="center"
           marginTop={{ base: '3', sm: '0' }}>
-          <Heading marginTop="1" color='var(--primary-color)'>
+          <Heading as="h2" marginTop="1" color='var(--primary-color)'>
               Conocenos!
           </Heading>
           <Text

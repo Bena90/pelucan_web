@@ -12,8 +12,10 @@ import { FaLocationArrow, FaPhone } from "react-icons/fa";
 import { Blob } from "../hero/hero";
 
 const CONTACT_TEL_HREF = "tel:+5491154954747";
-const CONTACT_MAPS_URL =
-  "https://www.google.com/maps/search/?api=1&query=Italia+1624%2C+Mart%C3%ADnez%2C+Buenos+Aires%2C+Argentina";
+const CONTACT_MAPS_URL = "https://maps.app.goo.gl/z7rZmpspZiFcCPA1A";
+
+// Hover unificado (teléfono, Maps e Instagram) con tinte naranja de marca
+const CONTACT_LINK_HOVER_BG = "rgba(243, 143, 0, 0.16)";
 
 export default function Contact() {
   return (
@@ -49,7 +51,9 @@ export default function Contact() {
                 flexDirection={"column"}
                 w={"100%"}
               >
-                <Heading color="var(--primary-color)">Visitanos!</Heading>
+                <Heading as="h2" color="var(--primary-color)">
+                  Visitanos!
+                </Heading>
                 <Text
                   fontSize="lg"
                   mt={{ sm: 3, md: 3, lg: 5 }}
@@ -68,7 +72,7 @@ export default function Contact() {
                       width="200px"
                       variant="ghost"
                       color="gray.800"
-                      _hover={{ bg: "blackAlpha.50" }}
+                      _hover={{ bg: CONTACT_LINK_HOVER_BG }}
                       leftIcon={<FaPhone color="#505050" size="20px" />}
                     >
                       +54 9 11 5495-4747
@@ -78,13 +82,13 @@ export default function Contact() {
                       href={CONTACT_MAPS_URL}
                       target="_blank"
                       rel="noopener noreferrer"
-                      aria-label="Abrir ubicación Italia 1624, Martínez, en Google Maps"
+                      aria-label="Abrir la ficha de Pelucan en Google Maps"
                       size="md"
                       height="48px"
                       width="200px"
                       variant="ghost"
                       color="gray.800"
-                      _hover={{ bg: "blackAlpha.50" }}
+                      _hover={{ bg: CONTACT_LINK_HOVER_BG }}
                       leftIcon={<FaLocationArrow color="#505050" size="20px" />}
                     >
                       Italia 1624, Martínez
@@ -100,7 +104,7 @@ export default function Contact() {
                       width="200px"
                       variant="ghost"
                       color="gray.800"
-                      _hover={{ bg: "orange.200" }}
+                      _hover={{ bg: CONTACT_LINK_HOVER_BG }}
                       leftIcon={<BsInstagram color="#505050" size="20px" />}
                     >
                       ./pelucan.sergio

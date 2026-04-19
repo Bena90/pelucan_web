@@ -5,20 +5,37 @@ import { Metadata } from 'next'
 
 const inter = Inter({ subsets: ['latin'] })
 
+const siteUrl = 'https://pelucan.ar'
+
 export const metadata: Metadata = {
-  title: 'Pelucan - Sergio Velazquez Groomer | Peluquería Canina en Martinez',
-  description: 'Peluquería canina profesional en Martinez, Zona Norte. Servicios de corte de raza, baño, deslanado y stripping para tu mascota. Turnos por WhatsApp.',
-  keywords: ['peluquería canina', 'grooming perros', 'Martinez', 'zona norte', 'corte de raza', 'baño canino', 'deslanado', 'stripping', 'pelucan', 'Sergio Velazquez'],
+  title: 'Pelucan | Peluquería canina en Martínez – Sergio Velazquez Groomer',
+  description:
+    'Peluquería canina en Martínez, Zona Norte. Salud, conexión y buen trato: baño, corte de raza, deslanado y stripping. Turnos por WhatsApp.',
+  keywords: [
+    'peluquería canina',
+    'grooming perros',
+    'Martínez',
+    'Martinez',
+    'zona norte',
+    'corte de raza',
+    'baño canino',
+    'deslanado',
+    'stripping',
+    'pelucan',
+    'Sergio Velazquez',
+    'peluquería canina Martínez',
+  ],
   authors: [{ name: 'Sergio Velazquez' }],
   creator: 'Pelucan',
-  metadataBase: new URL('https://pelucan.ar'),
+  metadataBase: new URL(siteUrl),
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'Pelucan - Peluquería Canina Profesional en Martinez',
-    description: 'Resaltá la belleza de tu mejor amigo con nuestros servicios de peluquería canina profesional. Cortes de raza, baño, deslanado y stripping.',
-    url: 'https://pelucan.ar',
+    title: 'Pelucan | Peluquería canina en Martínez',
+    description:
+      'Salud, conexión y buen trato para tu mascota. Baño, cortes de raza, deslanado y stripping en Martínez, Zona Norte. Turnos por WhatsApp.',
+    url: siteUrl,
     siteName: 'Pelucan',
     locale: 'es_AR',
     type: 'website',
@@ -27,14 +44,15 @@ export const metadata: Metadata = {
         url: '/assets/initial.png',
         width: 800,
         height: 600,
-        alt: 'Pelucan - Peluquería Canina Profesional',
+        alt: 'Pelucan, peluquería canina en Martínez',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Pelucan - Peluquería Canina Profesional en Martinez',
-    description: 'Resaltá la belleza de tu mejor amigo con nuestros servicios de peluquería canina profesional.',
+    title: 'Pelucan | Peluquería canina en Martínez',
+    description:
+      'Salud, conexión y buen trato. Baño, cortes de raza, deslanado y stripping. Martínez, Zona Norte.',
     images: ['/assets/initial.png'],
   },
   icons: {
@@ -53,30 +71,39 @@ export const metadata: Metadata = {
   },
 }
 
-// Datos estructurados JSON-LD para SEO local (Schema.org LocalBusiness)
+// Horarios según ficha de Google Maps (domingo cerrado; no se declara en schema).
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
   name: 'Pelucan - Sergio Velazquez Groomer',
-  description: 'Peluquería canina profesional en Martinez, Zona Norte.',
-  url: 'https://pelucan.ar',
+  description:
+    'Peluquería canina en Martínez, Zona Norte. Salud, conexión y buen trato; baño, cortes de raza, deslanado y stripping.',
+  url: siteUrl,
   telephone: '+5491154954747',
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'Italia 1624',
-    addressLocality: 'Martinez',
+    addressLocality: 'Martínez',
     addressRegion: 'Buenos Aires',
     addressCountry: 'AR',
   },
-  image: '/assets/initial.png',
+  image: `${siteUrl}/assets/initial.png`,
   priceRange: '$$',
-  openingHoursSpecification: {
-    '@type': 'OpeningHoursSpecification',
-    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-  },
-  sameAs: [
-    'https://www.instagram.com/pelucan.sergio/',
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      opens: '10:00',
+      closes: '17:00',
+    },
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: 'Saturday',
+      opens: '09:00',
+      closes: '13:00',
+    },
   ],
+  sameAs: ['https://www.instagram.com/pelucan.sergio/'],
 }
 
 export default function RootLayout({
