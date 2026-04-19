@@ -46,7 +46,8 @@ import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
               </Text>
             </Heading>
             <Text color={'gray.500'}>
-                Resalta la belleza de tu mejor amigo con nuestros servicios de peluquería canina profesional ¿Es hora de un baño?
+              Peluquería canina con foco en salud, conexión y buen trato. Así resaltamos la belleza natural de tu mejor
+              amigo. ¿Es hora de un baño?
             </Text>
             <Stack
               spacing={{ base: 4, sm: 6 }}

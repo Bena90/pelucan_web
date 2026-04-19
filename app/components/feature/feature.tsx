@@ -99,7 +99,8 @@ import { Blob } from '../hero/hero';
               Conocé nuestros servicios
             </Heading>
             <Text color={'gray.600'} fontSize='lg'>
-              Descubre nuestra gama de servicios especializados para el cuidado y embellecimiento de tu mascota
+              Servicios pensados para acompañar cada etapa del cuidado: del baño al acabado, siempre priorizando el
+              bienestar de tu mascota.
             </Text>
           </Stack>
     
