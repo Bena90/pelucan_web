@@ -124,7 +124,7 @@ export default function Philosophy() {
           </Text>
           <Heading
             as="h2"
-            color="gray.700"
+            color="var(--primary-color)"
             fontSize={{ base: "2xl", sm: "4xl" }}
             fontWeight={700}
             lineHeight="shorter"

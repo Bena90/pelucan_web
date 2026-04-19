@@ -6,10 +6,10 @@ import {
   Heading,
   Icon,
   IconProps,
-  Image,
   Stack,
-  Text
+  Text,
 } from '@chakra-ui/react';
+import NextImage from 'next/image';
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
   
   export default function Hero() {
@@ -99,18 +99,25 @@ import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
               color='var(--primary-color)'
             />
             <Box
-              position={'relative'}
-              height={'500px'}
-              rounded={'2xl'}
-              width={'full'}
-              overflow={'hidden'}>
-              <Image
-                alt={'Perro feliz después del grooming profesional en Pelucan'}
-                fit={'cover'}
-                align={'center'}
-                w={'400px'}
-                h={'100%'}
+              position="relative"
+              w="full"
+              maxW={{ base: 'min(100%, 440px)', md: '400px' }}
+              mx={{ base: 'auto', md: 'unset' }}
+              rounded="2xl"
+              overflow="hidden"
+            >
+              <NextImage
                 src="/assets/initial.png"
+                alt="Perro feliz después del grooming profesional en Pelucan"
+                width={775}
+                height={1031}
+                priority
+                sizes="(max-width: 767px) 92vw, 400px"
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  display: 'block',
+                }}
               />
             </Box>
           </Flex>

@@ -95,7 +95,12 @@ import { Blob } from '../hero/hero';
               color='var(--primary-color)'
             />
           <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
-            <Heading as="h2" color={'gray.700'} fontSize={{ base: '3xl', sm: '5xl' }} fontWeight={700}>
+            <Heading
+              as="h2"
+              color="var(--primary-color)"
+              fontSize={{ base: '3xl', sm: '5xl' }}
+              fontWeight={700}
+            >
               Conocé nuestros servicios
             </Heading>
             <Text color={'gray.600'} fontSize='lg'>

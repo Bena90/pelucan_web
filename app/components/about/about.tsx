@@ -1,11 +1,5 @@
-import {
-  Box,
-  Container,
-  Heading,
-  Image,
-  Text,
-  useColorModeValue
-} from '@chakra-ui/react';
+import { Box, Container, Heading, Text, useColorModeValue } from '@chakra-ui/react';
+import NextImage from 'next/image';
 
 const ArticleList = () => {
   return (
@@ -27,12 +21,20 @@ const ArticleList = () => {
             zIndex="2"
             marginLeft={{ base: '0', sm: '5%' }}
             marginTop="5%">
-              <Image
-                borderRadius="lg"
-                src='/assets/about.png'
-                alt="Sergio Velazquez, peluquero canino profesional en Martínez"
-                objectFit="contain"
-              />
+              <Box w="100%" borderRadius="lg" overflow="hidden">
+                <NextImage
+                  src="/assets/about.png"
+                  alt="Sergio Velazquez, peluquero canino profesional en Martínez"
+                  width={1600}
+                  height={2600}
+                  sizes="(max-width: 767px) 100vw, 50vw"
+                  style={{
+                    width: '100%',
+                    height: 'auto',
+                    display: 'block',
+                  }}
+                />
+              </Box>
           </Box>
           <Box zIndex="1" width="100%" position="absolute" height="100%">
             <Box
