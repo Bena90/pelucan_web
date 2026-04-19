@@ -65,8 +65,8 @@ export default function Footer() {
       >
         <Logo />
         <Text textAlign={"center"}>
-          © {new Date().getFullYear()} Sergio Velazquez Groomer. All rights
-          reserved
+          © {new Date().getFullYear()} Pelucan · Sergio Velazquez Groomer. Todos
+          los derechos reservados.
         </Text>
         <Stack direction={"row"} spacing={6}>
           <SocialButton

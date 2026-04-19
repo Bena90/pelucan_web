@@ -12,6 +12,8 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 
+const BRAND_SUBTITLE = "Sergio Velazquez";
+
 export default function Navbar() {
   const { isOpen, onToggle } = useDisclosure();
 
@@ -44,18 +46,44 @@ export default function Navbar() {
             }
           />
         </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-          <Text
+        <Flex
+          flex={{ base: 1 }}
+          justify={{ base: "center", md: "start" }}
+          align="center"
+        >
+          <Stack
+            spacing={0}
+            alignItems={useBreakpointValue({
+              base: "center",
+              md: "flex-start",
+            })}
             textAlign={useBreakpointValue({ base: "center", md: "left" })}
-            lineHeight="20px"
-            fontFamily={"heading"}
-            fontSize={{ base: "xl" }}
-            color={useColorModeValue("gray.800", "white")}
+            lineHeight="shorter"
           >
-            Sergio Velazquez
-          </Text>
+            <Text
+              as="a"
+              href="#hero"
+              fontFamily="heading"
+              fontSize={{ base: "xl", md: "2xl" }}
+              fontWeight={700}
+              color="var(--primary-color)"
+              _hover={{ textDecoration: "none", opacity: 0.92 }}
+            >
+              Pelucan
+            </Text>
+            <Text
+              fontSize="xs"
+              color={useColorModeValue("gray.600", "gray.300")}
+            >
+              {BRAND_SUBTITLE}
+            </Text>
+          </Stack>
 
-          <Flex display={{ base: "none", md: "flex" }} ml={10}>
+          <Flex
+            display={{ base: "none", md: "flex" }}
+            ml={10}
+            alignItems="center"
+          >
             <DesktopNav />
           </Flex>
         </Flex>
@@ -144,6 +172,10 @@ const NAV_ITEMS: Array<NavItem> = [
   {
     label: "Home",
     href: "#hero",
+  },
+  {
+    label: "Filosofía",
+    href: "#philosophy",
   },
   {
     label: "Servicios",

@@ -11,8 +11,12 @@ import {
 } from '@chakra-ui/react';
 import NextImage from 'next/image';
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
-  
-  export default function Hero() {
+
+const WHATSAPP_TURN_URL = `https://wa.me/5491154954747?text=${encodeURIComponent(
+  'Hola, quiero sacar turno en Pelucan.',
+)}`;
+
+export default function Hero() {
     return (
       <Container maxW={'7xl'} id='hero'>
         <Stack
@@ -54,7 +58,7 @@ import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
               spacing={{ base: 4, sm: 6 }}
               direction='row'
               >
-              <a href={'https://cutt.ly/PELUCAN'} target="_blank" rel="noopener noreferrer">
+              <a href={WHATSAPP_TURN_URL} target="_blank" rel="noopener noreferrer">
                 <Button
                   rounded={'full'}
                   size={'lg'}
