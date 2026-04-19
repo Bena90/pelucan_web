@@ -6,13 +6,17 @@ import {
   Heading,
   Icon,
   IconProps,
-  Image,
   Stack,
-  Text
+  Text,
 } from '@chakra-ui/react';
+import NextImage from 'next/image';
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
-  
-  export default function Hero() {
+
+const WHATSAPP_TURN_URL = `https://wa.me/5491154954747?text=${encodeURIComponent(
+  'Hola, quiero sacar turno en Pelucan.',
+)}`;
+
+export default function Hero() {
     return (
       <Container maxW={'7xl'} id='hero'>
         <Stack
@@ -22,6 +26,7 @@ import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
           direction={{ base: 'column', md: 'row' }}>
           <Stack flex={1} spacing={{ base: 5, md: 10 }}>
             <Heading
+              as="h1"
               lineHeight={1.1}
               fontWeight={600}
               fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}>
@@ -46,13 +51,14 @@ import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
               </Text>
             </Heading>
             <Text color={'gray.500'}>
-                Resalta la belleza de tu mejor amigo con nuestros servicios de peluquería canina profesional ¿Es hora de un baño?
+              Peluquería canina con foco en salud, conexión y buen trato. Así resaltamos la belleza natural de tu mejor
+              amigo. ¿Es hora de un baño?
             </Text>
             <Stack
               spacing={{ base: 4, sm: 6 }}
               direction='row'
               >
-              <a href={'https://cutt.ly/PELUCAN'} target="_blank" rel="noopener noreferrer">
+              <a href={WHATSAPP_TURN_URL} target="_blank" rel="noopener noreferrer">
                 <Button
                   rounded={'full'}
                   size={'lg'}
@@ -97,18 +103,25 @@ import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
               color='var(--primary-color)'
             />
             <Box
-              position={'relative'}
-              height={'500px'}
-              rounded={'2xl'}
-              width={'full'}
-              overflow={'hidden'}>
-              <Image
-                alt={'Perro feliz después del grooming profesional en Pelucan'}
-                fit={'cover'}
-                align={'center'}
-                w={'400px'}
-                h={'100%'}
+              position="relative"
+              w="full"
+              maxW={{ base: 'min(100%, 440px)', md: '400px' }}
+              mx={{ base: 'auto', md: 'unset' }}
+              rounded="2xl"
+              overflow="hidden"
+            >
+              <NextImage
                 src="/assets/initial.png"
+                alt="Perro feliz después del grooming profesional en Pelucan"
+                width={775}
+                height={1031}
+                priority
+                sizes="(max-width: 767px) 92vw, 400px"
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  display: 'block',
+                }}
               />
             </Box>
           </Flex>

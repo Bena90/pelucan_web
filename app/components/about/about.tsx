@@ -1,15 +1,9 @@
-import {
-  Box,
-  Container,
-  Heading,
-  Image,
-  Text,
-  useColorModeValue
-} from '@chakra-ui/react';
+import { Box, Container, Heading, Text, useColorModeValue } from '@chakra-ui/react';
+import NextImage from 'next/image';
 
 const ArticleList = () => {
   return (
-    <Container maxW={'7xl'} p="12" id='about'>
+    <Container maxW={'7xl'} px={{ base: 4, sm: 6, md: 8 }} py={{ base: 8, md: 12 }} id='about'>
       <Box
         marginTop={{ base: '1', sm: '5' }}
         display="flex"
@@ -27,12 +21,20 @@ const ArticleList = () => {
             zIndex="2"
             marginLeft={{ base: '0', sm: '5%' }}
             marginTop="5%">
-              <Image
-                borderRadius="lg"
-                src='/assets/about.png'
-                alt="Sergio Velazquez, peluquero canino profesional en Martinez"
-                objectFit="contain"
-              />
+              <Box w="100%" borderRadius="lg" overflow="hidden">
+                <NextImage
+                  src="/assets/about.png"
+                  alt="Sergio Velazquez, peluquero canino profesional en Martínez"
+                  width={1600}
+                  height={2600}
+                  sizes="(max-width: 767px) 100vw, 50vw"
+                  style={{
+                    width: '100%',
+                    height: 'auto',
+                    display: 'block',
+                  }}
+                />
+              </Box>
           </Box>
           <Box zIndex="1" width="100%" position="absolute" height="100%">
             <Box
@@ -49,32 +51,43 @@ const ArticleList = () => {
           flexDirection="column"
           justifyContent="center"
           marginTop={{ base: '3', sm: '0' }}>
-          <Heading marginTop="1" color='var(--primary-color)'>
-              Conocenos!
+          <Heading
+            as="h2"
+            marginTop="1"
+            color="var(--primary-color)"
+            fontSize={{ base: '2xl', md: '3xl' }}
+          >
+            Conocenos!
           </Heading>
           <Text
             as="p"
-            marginTop="2"
+            marginTop={{ base: 2, md: 2 }}
             color={'gray.700'}
-            fontSize="lg">
+            fontSize={{ base: 'md', md: 'lg' }}
+            lineHeight={{ base: 'base', md: 'tall' }}
+          >
             ¡Hola! Soy Sergio, el peluquero canino apasionado que está detrás de
             nuestra peluquería. Permíteme contarte un poco sobre quiénes somos y
             qué nos impulsa.
           </Text>
           <Text
             as="p"
-            marginTop="2"
+            marginTop={{ base: 2, md: 2 }}
             color={useColorModeValue('gray.700', 'gray.200')}
-            fontSize="lg">
+            fontSize={{ base: 'md', md: 'lg' }}
+            lineHeight={{ base: 'base', md: 'tall' }}
+          >
             En nuestra peluquería, nos esforzamos por brindar un servicio
             personalizado y de alta calidad. Entiendo que cada perro es único,
             con su propia personalidad y necesidades individuales.
           </Text>
           <Text
             as="p"
-            marginTop="2"
+            marginTop={{ base: 2, md: 2 }}
             color={useColorModeValue('gray.700', 'gray.200')}
-            fontSize="lg">
+            fontSize={{ base: 'md', md: 'lg' }}
+            lineHeight={{ base: 'base', md: 'tall' }}
+          >
             En cada sesión de peluquería, me comprometo a crear un ambiente
             tranquilo y relajante para tus queridas mascotas. Valoramos su
             comodidad y bienestar en todo momento. Utilizamos productos de calidad
@@ -83,9 +96,11 @@ const ArticleList = () => {
           </Text>
           <Text
             as="p"
-            marginTop="2"
+            marginTop={{ base: 2, md: 2 }}
             color={useColorModeValue('gray.700', 'gray.200')}
-            fontSize="lg">
+            fontSize={{ base: 'md', md: 'lg' }}
+            lineHeight={{ base: 'base', md: 'tall' }}
+          >
             Pero más allá de ser un peluquero canino, soy un amante de los animales.
             Cuido a cada perro como si fuera mi propio compañero, asegurándome de
             establecer un vínculo de confianza y cariño con cada uno de ellos. Tu perro
@@ -94,9 +109,11 @@ const ArticleList = () => {
           </Text>
           <Text
             as="p"
-            marginTop="2"
+            marginTop={{ base: 2, md: 2 }}
             color={useColorModeValue('gray.700', 'gray.200')}
-            fontSize="lg">
+            fontSize={{ base: 'md', md: 'lg' }}
+            lineHeight={{ base: 'base', md: 'tall' }}
+          >
             Estoy emocionado de conocerte a ti y a tu adorable compañero peludo. Ven y descubre
             cómo puedo realzar la belleza de tu mejor amigo con mis servicios de peluquería canina.
             ¡Espero darte la bienvenida pronto a nuestra peluquería y compartir mi pasión por los

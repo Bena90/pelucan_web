@@ -4,12 +4,14 @@ import ArticleList from './components/about/about'
 import Contact from './components/contact/contact'
 import Feature from './components/feature/feature'
 import Hero from './components/hero/hero'
+import Philosophy from './components/philosophy/philosophy'
 
 export default function Home() {
   return (
     <div>
       <main>
         <Hero />
+        <Philosophy />
         <Feature/>
         <Divider />
         <ArticleList />
