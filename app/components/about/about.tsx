@@ -3,7 +3,7 @@ import NextImage from 'next/image';
 
 const ArticleList = () => {
   return (
-    <Container maxW={'7xl'} p="12" id='about'>
+    <Container maxW={'7xl'} px={{ base: 4, sm: 6, md: 8 }} py={{ base: 8, md: 12 }} id='about'>
       <Box
         marginTop={{ base: '1', sm: '5' }}
         display="flex"
@@ -51,32 +51,43 @@ const ArticleList = () => {
           flexDirection="column"
           justifyContent="center"
           marginTop={{ base: '3', sm: '0' }}>
-          <Heading as="h2" marginTop="1" color='var(--primary-color)'>
-              Conocenos!
+          <Heading
+            as="h2"
+            marginTop="1"
+            color="var(--primary-color)"
+            fontSize={{ base: '2xl', md: '3xl' }}
+          >
+            Conocenos!
           </Heading>
           <Text
             as="p"
-            marginTop="2"
+            marginTop={{ base: 2, md: 2 }}
             color={'gray.700'}
-            fontSize="lg">
+            fontSize={{ base: 'md', md: 'lg' }}
+            lineHeight={{ base: 'base', md: 'tall' }}
+          >
             ¡Hola! Soy Sergio, el peluquero canino apasionado que está detrás de
             nuestra peluquería. Permíteme contarte un poco sobre quiénes somos y
             qué nos impulsa.
           </Text>
           <Text
             as="p"
-            marginTop="2"
+            marginTop={{ base: 2, md: 2 }}
             color={useColorModeValue('gray.700', 'gray.200')}
-            fontSize="lg">
+            fontSize={{ base: 'md', md: 'lg' }}
+            lineHeight={{ base: 'base', md: 'tall' }}
+          >
             En nuestra peluquería, nos esforzamos por brindar un servicio
             personalizado y de alta calidad. Entiendo que cada perro es único,
             con su propia personalidad y necesidades individuales.
           </Text>
           <Text
             as="p"
-            marginTop="2"
+            marginTop={{ base: 2, md: 2 }}
             color={useColorModeValue('gray.700', 'gray.200')}
-            fontSize="lg">
+            fontSize={{ base: 'md', md: 'lg' }}
+            lineHeight={{ base: 'base', md: 'tall' }}
+          >
             En cada sesión de peluquería, me comprometo a crear un ambiente
             tranquilo y relajante para tus queridas mascotas. Valoramos su
             comodidad y bienestar en todo momento. Utilizamos productos de calidad
@@ -85,9 +96,11 @@ const ArticleList = () => {
           </Text>
           <Text
             as="p"
-            marginTop="2"
+            marginTop={{ base: 2, md: 2 }}
             color={useColorModeValue('gray.700', 'gray.200')}
-            fontSize="lg">
+            fontSize={{ base: 'md', md: 'lg' }}
+            lineHeight={{ base: 'base', md: 'tall' }}
+          >
             Pero más allá de ser un peluquero canino, soy un amante de los animales.
             Cuido a cada perro como si fuera mi propio compañero, asegurándome de
             establecer un vínculo de confianza y cariño con cada uno de ellos. Tu perro
@@ -96,9 +109,11 @@ const ArticleList = () => {
           </Text>
           <Text
             as="p"
-            marginTop="2"
+            marginTop={{ base: 2, md: 2 }}
             color={useColorModeValue('gray.700', 'gray.200')}
-            fontSize="lg">
+            fontSize={{ base: 'md', md: 'lg' }}
+            lineHeight={{ base: 'base', md: 'tall' }}
+          >
             Estoy emocionado de conocerte a ti y a tu adorable compañero peludo. Ven y descubre
             cómo puedo realzar la belleza de tu mejor amigo con mis servicios de peluquería canina.
             ¡Espero darte la bienvenida pronto a nuestra peluquería y compartir mi pasión por los

@@ -48,7 +48,7 @@ export default function Navbar() {
         </Flex>
         <Flex
           flex={{ base: 1 }}
-          justify={{ base: "center", md: "start" }}
+          justify={{ base: "end", md: "start" }}
           align="center"
         >
           <Stack
